@@ -1,0 +1,145 @@
+:root{
+    --default-font: "Roboto", sans-serif;
+    --heading-font: "Raleway", sans-serif;
+    --main-color:rgb(10, 87, 176);
+    --secondary-color:#4e4e4e;
+}
+html{
+  scroll-padding-top:72px ;
+}
+body{
+    color: var(--secondary-color);
+    font-family: var(--default-font);
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--heading-font);
+  color: var(--main-color)!important;
+}
+.navbar-brand{
+  font-family: var(--heading-font);
+  font-size: 26px!important;
+  letter-spacing: 1.3px;
+}
+ .navbar a{
+    color: white!important;
+ }
+ .nav-link.active {
+  color: var(--main-color) !important;
+  font-weight: bold;
+}
+ header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../imgs/hero2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    filter: brightness(0.95) contrast(1.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+  .navbar-toggler {
+    border-color: white;
+  }
+ .navbar-toggler:focus{
+  box-shadow: none!important;
+ }
+  header h1 {
+    font-size: 26px;
+  }
+  header p {
+    max-width: 100%;
+  }
+  .card{
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  }
+  .card-img-container {
+    height: 250px;
+    overflow: hidden;
+}
+.section-title {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-bottom: 10px;
+  color: var(--heading-color);
+}
+.section-title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+.section-title:hover::before {
+  width: 100%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+  
+.contact .icon{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid var(--main-color);
+    font-size: 1.3rem;
+    color: var(--main-color); 
+}
+.services i{
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.contact .box{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.contact .box p{
+    font-size: 14px;
+    font-family: var(--default-font);
+}
+form input, form textarea{
+    border: 1px solid rgb(78, 78, 78,.3);
+    padding: 12px 24px;  
+}
+form input::placeholder, form textarea::placeholder{
+    color: rgb(78, 78, 78,.5);
+}
+form input:focus, form textarea:focus{
+    border: 1px solid var(--main-color);
+    outline: none;
+}
+form button{
+    
+    font-size: 1.1rem;
+}
+form button:hover{
+    outline: none;
+    transition: all .5s;
+}
+  @media screen and (min-width:768px) {
+    header h1{
+        font-size: 60px!important;
+    }
+    header p{
+        max-width: 60%;
+    }
+    
+  }

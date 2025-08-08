@@ -412,3 +412,32 @@ h1,h2,h3,h4,h5,h6{
     }
     
   }
+  .whatsapp-float {
+  position: fixed;
+  bottom: 20px; 
+  right: 20px; 
+  background-color: #25D366;
+  color: white;
+  font-size: 28px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  line-height: 55px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  transition: all 0.3s ease-in-out;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #1ebe57;
+}
+
+.whatsapp-float i {
+  vertical-align: middle;
+}
